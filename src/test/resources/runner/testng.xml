@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="tests">
+
+<listeners>
+	<listener class-name="listeners.ExtentListeners"/>
+</listeners>	
+	
+  <test name="Create customer API test">
+    <classes>
+      <class name="testcases.TestCreateCustomer"/>
+      <class name="testcases.TestDeleteCustomer"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
