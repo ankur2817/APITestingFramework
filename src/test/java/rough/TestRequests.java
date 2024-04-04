@@ -22,7 +22,7 @@ public class TestRequests {
 		.header("Content-Type", "application/json")
 		.param("limit", 3)
 		.auth()
-		.basic("sk_test_51NbkkVSBIFrUJ0aDPYQTkz3Z2OzQkjROom3r7MrT40ld2dd7XM3UE11xiBFZ9p60OF71Eb2M1ebm0vIsFSg8I9F100RZMCeiGb", "")
+		.basic("", "")
 		.get("https://api.stripe.com/v1/customers");
 	response.prettyPrint();
 	System.out.println("Status code is => " + response.statusCode());
@@ -33,7 +33,7 @@ public class TestRequests {
 	//Get the data of single/one customer
 	Response response1 = given()
 		.header("Content-Type", "application/json")
-		.header("Authorization", "Bearer sk_test_51NbkkVSBIFrUJ0aDPYQTkz3Z2OzQkjROom3r7MrT40ld2dd7XM3UE11xiBFZ9p60OF71Eb2M1ebm0vIsFSg8I9F100RZMCeiGb")
+		.header("Authorization", "Bearer ")
 		.get("https://api.stripe.com/v1/customers/cus_Pk4LIfr4FAvvT1");
 	response1.prettyPrint();
 	System.out.println("Status code is => " + response1.statusCode());
@@ -44,7 +44,7 @@ public class TestRequests {
 	//Create a new customer using formParam
 	Response response2 = given()
 		.header("Content-Type", "application/x-www-form-urlencoded")
-		.header("Authorization", "Bearer sk_test_51NbkkVSBIFrUJ0aDPYQTkz3Z2OzQkjROom3r7MrT40ld2dd7XM3UE11xiBFZ9p60OF71Eb2M1ebm0vIsFSg8I9F100RZMCeiGb")
+		.header("Authorization", "Bearer ")
 		.formParam("name", "Anika Gupta")
 		.formParam("email", "abc2817@gmail.com")
 		.formParam("description", "Creating a new customer")

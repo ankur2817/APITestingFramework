@@ -16,8 +16,8 @@ import pojo.PurchaseUnits;
 public class TestPaypal {
 
 	static String access_Token;
-	static String client_Id = "AfUGKzkq-9kOgKsbqwDqdCIsCWdc9bkr7RdfwyKIyU_gd2QKr8CDQ5U33iRE0zQI-yguPp0jvqaH7Uek";
-	static String scretKey = "EKtZUS1ADSvMM6P0yrsrlAkV4HFpQyDDv6pMm7VCpvQ2dxLVlBpsHC3GC4yeRjcZqtZNV2RDPsIOGdjx";
+	static String client_Id = "";
+	static String scretKey = "";
 
 	static String baseURI = "https://api-m.sandbox.paypal.com";
 
