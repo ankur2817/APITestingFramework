@@ -5,16 +5,13 @@ import java.net.UnknownHostException;
 
 public class TestIP {
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 
-		try {
-			System.out.println("http://" + InetAddress.getLocalHost().getHostAddress()
-					+ ":8080/job/APITestingFramework/Extent_20Reports/");
-		} catch (UnknownHostException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-
+	try {
+	    System.out.println("http://" + InetAddress.getLocalHost().getHostAddress()
+		    + ":8080/job/APITestingFramework/Extent_20Reports/");
+	} catch (UnknownHostException e) {
+	    e.printStackTrace();
 	}
-
+    }
 }

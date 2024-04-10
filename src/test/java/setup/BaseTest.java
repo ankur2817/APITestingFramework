@@ -13,25 +13,25 @@ import utilities.ExcelReader;
 
 public class BaseTest {
 
-	public static Properties config = new Properties();
-	private FileInputStream fis;
-	public static Response response;
+    public static Properties config = new Properties();
+    private FileInputStream fis;
+    public static Response response;
 
-	public static ExcelReader excel = new ExcelReader("./src/test/resources/excel/testdata.xlsx");
+    public static ExcelReader excel = new ExcelReader("./src/test/resources/excel/testdata.xlsx");
 
-	@BeforeSuite
-	public void setUp() throws IOException {
+    @BeforeSuite
+    public void setUp() throws IOException {
 
-		fis = new FileInputStream("./src/test/resources/properties/config.properties");
-		config.load(fis);
+	fis = new FileInputStream("./src/test/resources/properties/config.properties");
+	config.load(fis);
 
-		RestAssured.baseURI = config.getProperty("baseURI");
-		RestAssured.basePath = config.getProperty("basePath");
-	}
+	RestAssured.baseURI = config.getProperty("baseURI");
+	RestAssured.basePath = config.getProperty("basePath");
+    }
 
-	@AfterSuite
-	public void tearDown() {
+    @AfterSuite
+    public void tearDown() {
 
-	}
+    }
 
 }

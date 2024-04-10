@@ -54,14 +54,14 @@ public class TestRequests {
 	response2.prettyPrint();
 	System.out.println("Status code is => " + response2.statusCode());
 	System.out.println("Response time (milliseconds) is => " + response2.time());
-	
+
 	JsonPath objJsonPath = response2.jsonPath();
 	System.out.println(objJsonPath.getString("preferred_locales[0]"));
 	if(objJsonPath.getString("preferred_locales[0]").equalsIgnoreCase("hindi"))
 	    System.out.println("!!!!!!!!!!!!! Balle Balle !!!!!!!!!!!!!");
 	if(objJsonPath.getString("address.line1").equalsIgnoreCase("A008"))
 	    System.out.println("!!!!!!!!!!!!! Balle Balle !!!!!!!!!!!!!");
-	
+
 
 
 	System.out.println("=======================================================");
@@ -116,7 +116,7 @@ public class TestRequests {
 	response6.prettyPrint();
 	System.out.println("Status code is => " + response6.getStatusCode());
 	System.out.println("Response time (milliseconds) is => " + response6.time());
-	
+
 	System.out.println("=======================================================");
 
     }
