@@ -7,10 +7,12 @@ import setup.BaseTest;
 
 public class APIDeleteCustomer extends BaseTest {
 
-	public static Response sendDeleteRequestToDeleteCustomerAPIWithValidId(String id) {
-		response = given().auth().basic(config.getProperty("validSecretKey"), "")
-				.delete(config.getProperty("customerAPIEndPoint") + "/" + id);
+    public static Response sendDeleteRequestToDeleteCustomerAPIWithValidId(String id) {
+	response = given().
+		auth().
+		basic(config.getProperty("validSecretKey"), "").
+		delete(config.getProperty("customerAPIEndPoint") + "/" + id);
 
-		return response;
-	}
+	return response;
+    }
 }
