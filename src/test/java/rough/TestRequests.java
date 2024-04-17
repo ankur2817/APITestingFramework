@@ -17,7 +17,7 @@ public class TestRequests {
 
     public static void main(String[] args) {
 
-	//Get the list of all customers
+	///Get the list of all customers
 	Response response = given()
 		.header("Content-Type", "application/json")
 		.param("limit", 3)
