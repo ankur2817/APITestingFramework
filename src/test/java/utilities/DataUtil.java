@@ -111,7 +111,7 @@ public class DataUtil extends BaseTest {
 	System.out.println("Total columns of data are: " + testColumns);
 
 	Object[][] data = new Object[testRows][1];
-	
+
 	int i = 0;
 
 	for (int rowNum = dataStartRowNum; rowNum < dataStartRowNum + testRows; rowNum++) {
@@ -120,10 +120,10 @@ public class DataUtil extends BaseTest {
 	    for (int colNum = 0; colNum < testColumns; colNum++) {
 		String testData = excel.getCellData(sheetName, colNum, rowNum);
 		String columnName = excel.getCellData(sheetName, colNum, testCaseRowNum + 1);
-		
+
 		table.put(columnName, testData);
 	    }
-	    
+
 	    data[i][0] = table;
 	    i++;
 	}
